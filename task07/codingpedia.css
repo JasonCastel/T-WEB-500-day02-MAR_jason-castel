@@ -1,0 +1,23 @@
+.box{
+     border: 2px solid black;
+     margin: 10px;
+     padding-left: 10px;
+     padding-right: 10px;
+     background-color:white;
+}
+
+ body{
+      display: flex;
+      justigy-content: space-between;
+      background-color:gray;
+}
+
+main{
+     flex:80%;
+}
+
+header{
+       display:grid;
+       grid-template-columns: 5fr 1fr;
+       align-items: center;
+}

@@ -1,0 +1,60 @@
+.box{
+     border: 2px solid black;
+     margin: 10px;
+     padding-left: 10px;
+     padding-right: 10px;
+     background-color:white;
+}
+
+.moving_square{
+               width: 100px;
+               height: 100px;
+               background-colour: red;
+               position: relative;
+               animation: moveEtChangedeCouleur 5s linear 5;
+
+}
+
+@keyframes moveEtChangedeCouleur{
+          0% {
+              bottom:0;
+              background-color: red;
+          }
+          25% {
+              bottom: 300px;
+              background-color: green;
+          }
+          50% {
+              right: 300px;
+              background-color: blue;
+          }
+          75% {
+              bottom: 0;
+              background-color: yellow;
+          }
+          100% {
+              bottom:0;
+              background-color: red;
+          }
+
+
+}
+
+
+
+
+ body{
+      display: flex;
+      justigy-content: space-between;
+      background-color:gray;
+}
+
+main{
+     flex:80%;
+}
+
+header{
+       display:grid;
+       grid-template-columns: 5fr 1fr;
+       align-items: center;
+}
